@@ -1,0 +1,221 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: auto;
+  background-color: #f4f4f4;
+}
+
+
+.current{
+color: silver;
+
+}
+
+.button1 {
+  color: white;
+  background: #e46845;
+  height: 35px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+.orange {
+  color: #e46845;
+}
+
+/* header */
+.navbar {
+  background-color: rgb(38, 124, 98)!important;
+  font-weight: 700;
+  color: white !important;
+  padding-top: 30px;
+  min-height: 60px;
+  border-bottom: #e46845 5px solid;
+  }
+
+   .container .navbar-brand {
+    color: white !important;
+
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 2ch;
+    font-weight: 700;
+  }
+  .navbar-light .navbar-nav .nav-link:hover{
+    color: #e46845
+  }
+  
+   
+/* header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+ul navbar-nav{
+  float: right;
+}
+
+
+
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .current a {
+  color: #e46845;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: lightblue;
+  font-weight: bold;
+} */
+
+/* preface starts */
+#preface {
+  /* min-height: 400px; */
+  height: 100%;
+  background: url("../img/preface_2.png") no-repeat;
+  background-size: cover !important;
+  object-fit: cover;
+  text-align: center;
+  color: white;
+}
+#preface h1 {
+  /* margin-top: 100px; */
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#preface p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #subscribe {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #preface2 {
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+  }
+}
+
+/* newsletter */
+#newsletter h1 {
+  margin-top: 10px;
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+  height: 35px;
+  width: 200px;
+  padding: 4px;
+  border-radius: 5px 0 0 5px;
+}
+
+/* boxes */
+#boxes {
+  margin-top: 50px;
+}
+
+#boxes .box {
+  /* float: c;
+  width: 30%; */
+  text-align: center;
+  padding: 10px auto;
+}
+
+#boxes .box img {
+  width: 70px;
+}
+
+/* sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+/* artice */
+article#page-col {
+  float: left;
+  width: 60%;
+}
+
+/* catalogue sliders */
+#slider {
+  width: 100%;
+}
+
+.carouser-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial !important;
+}
+
+.carouser-caption h4 {
+  color: rgb(1 31, 17, 17);
+  font-size: 15px !important;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: #e46845;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-top: 5px solid rgb(38, 124, 98);
+}
+
+
+/* slider  */
+#slider .carousel-inner{
+  /* width: 50%; */
+    text-align: center;
+  /* margin:auto ; */
+ /* padding-top: 10px; */
+ transition: 0.2ms;
+ height: 500px !important;
+}
+
+#slider .carousel-inner .carousel-item img{
+  object-fit: cover;
+}
+
+#about_us{
+  margin-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+#form-main{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
