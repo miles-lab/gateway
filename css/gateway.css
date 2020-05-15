@@ -9,7 +9,7 @@ body {
 
 
 .current{
-color: rgb(187, 197, 47);
+color: orange;
 
 }
 
@@ -29,27 +29,30 @@ color: rgb(187, 197, 47);
 
 /* header */
 .navbar {
-  background-color: rgb(28, 108, 182)!important;
+  background-color: rgb(97, 157, 206)!important;
   font-weight: 800;
   color: white !important;
   padding-top: 30px;
   min-height: 60px;
-  border-bottom: #923da3 5px solid;
+  border-bottom:orange 5px solid;
+  }
+  .navbar img{    
+    height: 50px;
   }
 
-   .container .navbar-brand {
+   /* .container .navbar-brand {
     color: rgb(187, 197, 47) !important;
-    font-size: 3.5ch;
+    font-size: 1ch;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } */
 
-  }
   .navbar-light .navbar-nav .nav-link {
     color: white !important;
     font-size: 2ch;
     font-weight: 700;
   }
   .navbar-light .navbar-nav .nav-link:hover{
-    color: #83321b !important;
+    color: grey !important;
   }
   
    
@@ -207,14 +210,23 @@ article#page-col {
 /* footer */
 footer {
   text-align: center;
-  background-color: rgb(28, 108, 182);
+  background-color: rgb(97, 157, 206);
   color: white;
   padding: 10px;
   margin-top: 10px;
-  border-top: 5px solid #923da3;
+  border-top: 5px solid orange;
 }
 
+.gee{
+  background: rgb(97, 157, 206);
+  text-decoration: none;  
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
 
+  
+}
 
 #about_us{
   margin-top: 30px;
