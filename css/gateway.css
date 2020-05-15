@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial, sans-serif';
   font-size: 15px;
   line-height: 1.5;
   padding: 0;
@@ -9,7 +9,7 @@ body {
 
 
 .current{
-color: silver;
+color: rgb(187, 197, 47);
 
 }
 
@@ -29,25 +29,27 @@ color: silver;
 
 /* header */
 .navbar {
-  background-color: rgb(38, 124, 98)!important;
-  font-weight: 700;
+  background-color: rgb(28, 108, 182)!important;
+  font-weight: 800;
   color: white !important;
   padding-top: 30px;
   min-height: 60px;
-  border-bottom: #e46845 5px solid;
+  border-bottom: #923da3 5px solid;
   }
 
    .container .navbar-brand {
-    color: white !important;
+    color: rgb(187, 197, 47) !important;
+    font-size: 3.5ch;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   }
   .navbar-light .navbar-nav .nav-link {
-    color: white;
+    color: white !important;
     font-size: 2ch;
     font-weight: 700;
   }
   .navbar-light .navbar-nav .nav-link:hover{
-    color: #e46845
+    color: #83321b !important;
   }
   
    
@@ -123,6 +125,12 @@ header a:hover {
 }
 
 /* newsletter */
+#newsletter{
+background-color: rgb(28, 108, 182);
+color: white;
+/* padding-top: ; */
+
+}
 #newsletter h1 {
   margin-top: 10px;
   float: left;
@@ -149,7 +157,15 @@ header a:hover {
   /* float: c;
   width: 30%; */
   text-align: center;
-  padding: 10px auto;
+  padding: 10px auto;  
+}
+
+#boxes p{
+  background: wheat;
+  padding: 10px;  
+  border-radius: 10px;
+  display: block;
+  /* shape-outside: 10px; */
 }
 
 #boxes .box img {
@@ -172,6 +188,8 @@ article#page-col {
 /* catalogue sliders */
 #slider {
   width: 100%;
+  object-fit: cover;
+  
 }
 
 .carouser-caption {
@@ -188,27 +206,14 @@ article#page-col {
 /* footer */
 footer {
   text-align: center;
-  background-color: #e46845;
+  background-color: rgb(28, 108, 182);
   color: white;
   padding: 10px;
   margin-top: 10px;
-  border-top: 5px solid rgb(38, 124, 98);
+  border-top: 5px solid #923da3;
 }
 
 
-/* slider  */
-#slider .carousel-inner{
-  /* width: 50%; */
-    text-align: center;
-  /* margin:auto ; */
- /* padding-top: 10px; */
- transition: 0.2ms;
- height: 500px !important;
-}
-
-#slider .carousel-inner .carousel-item img{
-  object-fit: cover;
-}
 
 #about_us{
   margin-top: 30px;
@@ -218,4 +223,9 @@ footer {
 #form-main{
   padding-top: 10px;
   padding-bottom: 20px;
+}
+#slider .carousel-inner .carousel-item img{  
+ object-fit: cover;
+  width: 100%;
+
 }
