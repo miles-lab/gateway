@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Think Web Development, Think Gateway">
-    <meta name="keywords" content="Web Development, Affordable Web Design and Development">
-    <meta name="author" content="Olatunji Miles">
-    <title>Miles Concept | Services</title>
-    <link rel="stylesheet" href="./css/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/gateway.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Think Web Development, Think Gateway" />
+    <meta name="keywords" content="Web Development, Affordable Web Design and Development" />
+    <meta name="author" content="Olatunji Miles" />
+    <title>Miles Concept | About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/gateway.css" />
+    <link rel="stylesheet" href="css/vendors/animate.min.css" />
+    <link rel="shortcut icon" href="img/My website logo.png" type="image/x-icon" />
 </head>
+
 <body>
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-custom">
         <div class="container">
-            <div id="branding">
-                
-                <h1 class="highlight">Miles Concept</h1>
+            <a class="navbar-brand" href="index.html"> <img src="img/miles logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="index.html"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-uppercase">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link text-uppercase"><span class="current">Services</span></a>
+                    </li>
+                </ul>
             </div>
-                 <nav>
-                     <ul>
-                         <li><a href="index2.html">Home</a></li>
-                         <li ><a href="about.html">About Us</a></li>
-                         <li class="current"><a href="services.html">Services</a></li>
-                    </ul>
-                </nav>
         </div>
-    </header>
+    </nav>
+
    
+    <div id="contents">  
+        <div id="services">
+            .e-services
 
-    <!-- newsletter starts -->
-    <section id="newsletter">
-        <div class="container">
-            <h1>Subscribe To Our Daily Newsletter</h1>
-                <form>
-                    <input type="email" placeholder="Enter Email...">
-                    <button type="Submit" class="button1">Subscribe</button>
-                </form>
         </div>
-    </section>
+        </div>
 
-    <section id="page">
-        <div class="container">            
-          
-        </div>
-    </section>
-    
+
+
+
+
+
+
+
+
+
+
+
     <footer>
         <p>Gateway Concept, Copyright &copy; 2020</p>
     </footer>
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script>
+        $("[data-toggle='tooltip']").tooltip();
+    </script>
 </body>
+
 </html>
