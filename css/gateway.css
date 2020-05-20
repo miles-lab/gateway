@@ -46,6 +46,21 @@ body {
   color: grey !important;
 }
 
+/* dropdown */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .15rem .9rem;
+  clear: both;
+  font-weight: 400;
+  font-size: 1.5ch !important;
+  color: rgb(97, 157, 206) !important;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  
+}
+
 /* preface starts */
 #preface {
   /* min-height: 400px; */
