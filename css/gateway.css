@@ -1,20 +1,21 @@
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-size: 15px;
   line-height: 1.5;
   padding: 0;
   margin: auto;
   background-color: white;
+  overflow-x: hidden;
 }
 
 /*-------global--------*/
-.current{
-color: orange;
+.current {
+  color: orange;
 }
 
-.gee{
+.gee {
   background: rgb(97, 157, 206);
-  text-decoration: none;  
+  text-decoration: none;
   border: none;
   border-radius: 5px;
   color: white;
@@ -22,32 +23,28 @@ color: orange;
   margin-bottom: 10px;
 }
 
-
 /*------------ header -----------*/
 .navbar {
-  background-color: rgb(97, 157, 206)!important;
+  background-color: rgb(97, 157, 206) !important;
   font-weight: 800;
   color: white !important;
   padding-top: 30px;
-  min-height: 60px;
-  border-bottom:orange 5px solid;
-  }
+  min-height: 20px;
+  border-bottom: orange 5px solid;
+}
 
-  .navbar img{    
-    height: 40px;
-  }
+.navbar img {
+  height: 40px;
+}
 
-   .navbar-light .navbar-nav .nav-link {
-    color: white !important;
-    font-size: 1.5ch !important;
-    font-weight: 700 !important;
-  }
-  .navbar-light .navbar-nav .nav-link:hover{
-    color: grey !important;
-  }
-  
-   
-
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.5ch !important;
+  font-weight: 700 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: grey !important;
+}
 
 /* preface starts */
 #preface {
@@ -77,6 +74,10 @@ color: orange;
     margin-right: auto;
     margin-left: auto;
   }
+
+  section.my-profile .container .card {
+    width: 100% !important;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -92,12 +93,10 @@ color: orange;
   margin-bottom: 20px;
 }
 
-
 /* catalogue sliders */
 #slider {
   width: 100%;
   object-fit: cover;
-  
 }
 
 .carouser-caption {
@@ -121,72 +120,129 @@ footer {
   border-top: 5px solid orange;
 }
 
-
-
-#about_us{
+#about_us {
   margin-top: 30px;
   padding-bottom: 20px;
   padding-top: 10px;
 }
 
-#slider .carousel-inner .carousel-item img{  
- object-fit: cover;
+#slider .carousel-inner .carousel-item img {
+  object-fit: cover;
   width: 100%;
-
 }
 
-.shadow-custom{
-  box-shadow: 0 0.5rem 1rem rgba(117, 101, 101, 0.767) !important;
+.shadow-custom {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-section#boxes .container .row .col-md-3:nth-child(3) .card{
+section#boxes .container .row .col-lg-3:nth-child(3) .card {
   transition: all 0.53s;
+  -webkit-transition: all 0.53;
   z-index: 9999 !important;
   transform: scale(1.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .card {
     margin-bottom: 30px;
   }
+  section.my-profile .container .card .card-body .row .col-md-6:last-child {
+    padding-top: 30px;
+  }
+  section.my-profile
+    .container
+    .card
+    .card-body
+    .row
+    .col-md-6:first-child
+    img {
+    max-width: 150px !important;
+    max-height: 150px !important;
+  }
 }
 
-#form-main{
+#form-main {
   padding-top: 10px;
   padding-bottom: 10px;
-  
 }
 
-#content{
+#content {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
 }
 
-#content .row{
+#content .row {
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
   margin-bottom: auto;
 }
 
-#content img{
+#content img {
   padding-top: 5px;
   height: auto;
   width: 100%;
   display: block;
 }
 
-.col-mid{  
+.col-mid {
   padding-bottom: 20px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   padding-top: 70px !important;
 }
 
-.bg-col{
-  background-color: honeydew;
-  display: block;
+#content h3 {
+  font-weight: bold;
+  color: rgb(97, 157, 206);
 }
 
+#content h3:hover {
+  font-weight: bold;
+  color: rgb(97, 157, 206);
+  cursor: pointer;
+}
 
+#content h3::after {
+  content: "";
+  height: 4px;
+  width: 110px;
+  background: rgb(97, 157, 206);
+  display: block;
+  margin: 7px auto 7px;
+}
+
+.bg-col {
+  
+  display: block;
+  border-radius: 5px 0px 5px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.adjust-progress p {
+  padding-top: 10px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.progress {
+  border-radius: 16px !important;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 750px) {
+  .services .container .row.services-img .col-md-6:last-child {
+    order: 1 !important;
+    padding-top: 20px !important;
+  }
+  .services .container .row.services-img .col-md-6:first-child {
+    order: 2 !important;
+    padding-top: 30px !important;
+  }
+}
